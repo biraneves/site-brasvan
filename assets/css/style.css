@@ -139,6 +139,19 @@ h1, h2 {
     line-height: 24px;
 }
 
+.fundo-cinza {
+    background-image: url('../img/fundo-contato.png');
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: var(--color-light-default);
+    font-size: 16px;
+    line-height: 24px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .fundo-branco h2 {
     color: var(--color-dark-title);
     font-size: 32px;
@@ -146,19 +159,19 @@ h1, h2 {
     padding-bottom: 20px;
 }
 
-.fundo-azul h2 {
+.fundo-azul h2, .fundo-cinza h2 {
     color: var(--color-light-title);
     font-size: 32px;
     line-height: 32px;
     padding-bottom: 20px;
 }
 
-.fundo-branco p {
+.fundo-branco p, .fundo-azul p, .fundo-cinza p {
     padding-bottom: 15px;
 }
 
-.fundo-azul p {
-    padding-bottom: 15px;
+.largura-total {
+    width: 100%;
 }
 
 #empresa-atendimento {
@@ -179,11 +192,11 @@ h1, h2 {
     padding-left: 40px;
 }
 
-#servicos {
+#servicos, #veiculos, #clientes, #contato {
     width: 100%;
 }
 
-#servicos-wrap {
+#servicos-wrap, #veiculos-wrap, #clientes-wrap, #contato-wrap {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -198,10 +211,67 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-#receptivo, #city-tours-hospedagem {
+#receptivo, #city-tours-hospedagem, #art-veiculos, #img-veiculos {
     width: 575px;
 }
 
 #title-hospedagem {
     margin-top: 20px;
+}
+
+#clientes {
+    padding-top: 0px;
+}
+
+#contato-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#telefones {
+    width: 400px;
+    text-align: center;
+}
+
+#formulario-contato {
+    width: 580px;
+}
+
+#contato ul {
+    list-style-type: none;
+}
+
+#contato li {
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#icone-phone {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#formulario-contato label {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#formulario-contato input, #formulario-contato textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#formulario-contato input {
+    height: 42px;
+}
+
+#formulario-contato #frm-enviar {
+    width: 100px;
 }
