@@ -1,7 +1,7 @@
-import { Props } from '../../App';
+import { IProps } from '../../App';
 import Hero from '../Hero';
 
-const Main = ({ language }: Props) => (
+const Main = ({ language }: IProps) => (
   <main>
     <Hero language={language} />
   </main>

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import imageHero from '../../assets/images/fundo-cabecalho-brasvan.png';
 import { colors, fonts } from '../../styles';
 
 export const HeroContainer = styled.section`
@@ -7,17 +6,12 @@ export const HeroContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(${imageHero});
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 800px;
   padding-top: 80px;
 
   h1 {
     font-family: ${fonts.fontTitle};
     font-size: 54px;
-    color: ${colors.white};
     text-shadow: 1px 1px 2px #090909;
   }
 
@@ -31,7 +25,6 @@ export const HeroContainer = styled.section`
   p {
     font-size: 24px;
     line-height: 24px;
-    color: ${colors.white};
     text-shadow: 1px 1px 2px #090909;
     margin-top: 36px;
   }

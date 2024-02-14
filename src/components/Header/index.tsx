@@ -1,4 +1,4 @@
-import { Props } from '../../App';
+import { IProps } from '../../App';
 import { HeaderContainer, LinkContainer, LinksContainer } from './styles';
 import logo from '../../assets/images/brasvan-logo-150.png';
 import { translations } from '../../translations';
@@ -10,7 +10,7 @@ type LanguageImages = {
   [key: string]: string;
 };
 
-const Header = ({ language, alterLanguage }: Props) => {
+const Header = ({ language, alterLanguage }: IProps) => {
   const languageImages: LanguageImages = {
     en: en,
     es: es,
