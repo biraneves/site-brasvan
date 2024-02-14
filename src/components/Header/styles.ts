@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { colors } from '../../styles';
+import { HashLink } from 'react-router-hash-link';
 
 export const LinksContainer = styled.ul`
   display: flex;
@@ -17,7 +18,7 @@ export const LinksContainer = styled.ul`
   }
 `;
 
-export const LinkContainer = styled.a`
+export const LinkContainer = styled(HashLink)`
   padding: 12px 12px 4px 12px;
   border-bottom: solid 3px transparent;
   text-decoration: none;

@@ -24,44 +24,32 @@ const Header = ({ language, alterLanguage }: IProps) => {
         <nav>
           <LinksContainer>
             <li>
-              <LinkContainer href="">
+              <LinkContainer to="#hero">
                 {translations[language].header.hdrHome}
               </LinkContainer>
             </li>
             <li>
-              <LinkContainer
-                onClick={() => {
-                  const section = document.querySelector('#aboutUs');
-                  section?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                href=""
-              >
+              <LinkContainer to="#about-us">
                 {translations[language].header.hdrAboutUs}
               </LinkContainer>
             </li>
             <li>
-              <LinkContainer
-                onClick={() => {
-                  const section = document.querySelector('#services');
-                  section?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                href=""
-              >
+              <LinkContainer to="#services">
                 {translations[language].header.hdrServices}
               </LinkContainer>
             </li>
             <li>
-              <LinkContainer href="">
+              <LinkContainer to="#vehicles">
                 {translations[language].header.hdrVehicles}
               </LinkContainer>
             </li>
             <li>
-              <LinkContainer href="">
+              <LinkContainer to="#customers">
                 {translations[language].header.hdrCustomers}
               </LinkContainer>
             </li>
             <li>
-              <LinkContainer href="">
+              <LinkContainer to="#contact">
                 {translations[language].header.hdrContact}
               </LinkContainer>
             </li>

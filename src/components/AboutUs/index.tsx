@@ -6,7 +6,7 @@ import { SectionContent } from './styles';
 
 const AboutUs = ({ language }: IProps) => {
   return (
-    <Container id="aboutUs" type="light">
+    <Container id="about-us" type="light">
       <SectionContent className="container">
         <div>
           <h2>{translations[language].secAboutUs.subCompany.title}</h2>
