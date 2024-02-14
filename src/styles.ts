@@ -17,7 +17,7 @@ export const GlobalCSS = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
+
   }
 
   body {
@@ -30,5 +30,9 @@ export const GlobalCSS = createGlobalStyle`
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1023px) {
+      max-width: 90%;
+    }
   }
 `;

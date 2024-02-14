@@ -119,7 +119,7 @@ export const translations: ITranslations = {
     footer: {
       text: [
         'Copyright © 1998-<span id="currentYear"></span> by Brasvan Viagens e Turismo.',
-        'Developed and powered by CZN Tech.',
+        'Developed and powered by CZN Tech Solutions.',
       ],
     },
   },
@@ -241,7 +241,7 @@ export const translations: ITranslations = {
     footer: {
       text: [
         'Copyright © 1998-<span id="currentYear"></span> por Brasvan Viajes y Turismo.',
-        'Desarrollado y potenciado por CZN Tech.',
+        'Desarrollado y potenciado por CZN Tech Solutions.',
       ],
     },
   },
@@ -363,7 +363,7 @@ export const translations: ITranslations = {
     footer: {
       text: [
         'Copyright © 1998-<span id="currentYear"></span> by Brasvan Viagens e Turismo.',
-        'Developed and powered by CZN Tech.',
+        'Developed and powered by CZN Tech Solutions.',
       ],
     },
   },

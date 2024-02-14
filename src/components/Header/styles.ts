@@ -6,6 +6,15 @@ export const LinksContainer = styled.ul`
   gap: 24px;
   justify-content: flex-end;
   align-items: center;
+  list-style-type: none;
+
+  img {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 1023px) {
+    gap: 8px;
+  }
 `;
 
 export const LinkContainer = styled.a`
@@ -19,6 +28,10 @@ export const LinkContainer = styled.a`
     color: ${colors.darkTitle};
     border-bottom-color: ${colors.darkTitle};
     transition: all ease 0.3s;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 4px;
   }
 `;
 
@@ -35,5 +48,22 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    > div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    nav {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
   }
 `;
