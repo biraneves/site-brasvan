@@ -6,7 +6,6 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalCSS />
-      <h1>Brasvan</h1>
       <SiteRoutes />
     </BrowserRouter>
   );
