@@ -1,5 +1,15 @@
+import { BrowserRouter } from 'react-router-dom';
+import { GlobalCSS } from './styles';
+import SiteRoutes from './routes';
+
 function App() {
-  return <h1>Brasvan</h1>;
+  return (
+    <BrowserRouter>
+      <GlobalCSS />
+      <h1>Brasvan</h1>
+      <SiteRoutes />
+    </BrowserRouter>
+  );
 }
 
 export default App;
