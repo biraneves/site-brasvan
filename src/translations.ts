@@ -1,4 +1,6 @@
-export const intl_texts = {
+import { ITranslations } from './models/IIntlTexts';
+
+export const translations: ITranslations = {
   en: {
     header: {
       hdrHome: 'Home',
@@ -6,10 +8,10 @@ export const intl_texts = {
       hdrServices: 'Our service',
       hdrVehicles: 'Vehicles',
       hdrCustomers: 'Customers',
-      hdrContact: 'Call us!',
+      hdrContact: 'Contact us!',
       hdrLanguages: [
         {
-          language: 'pt-br',
+          language: 'pt',
           languageName: 'Português',
         },
         {
@@ -131,12 +133,12 @@ export const intl_texts = {
       hdrContact: 'Contacto',
       hdrLanguages: [
         {
-          language: 'pt-br',
+          language: 'pt',
           languageName: 'Portugués',
         },
         {
           language: 'en',
-          languageName: 'Inglés',
+          languageName: 'English',
         },
       ],
     },

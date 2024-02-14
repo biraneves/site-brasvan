@@ -1,10 +1,17 @@
 import { useState } from 'react';
 import { detectUserLanguage } from '../../utils/language/language';
+import Header from '../../components/Header';
+import Main from '../../components/Main';
 
 const Home = () => {
-  console.log(detectUserLanguage());
-  const [language, setLanguage] = useState();
-  return <h1>Home</h1>;
+  const [language, setLanguage] = useState(detectUserLanguage());
+
+  return (
+    <>
+      <Header language={language} alterLanguage={setLanguage} />
+      <Main language={language} />
+    </>
+  );
 };
 
 export default Home;

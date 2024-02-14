@@ -7,6 +7,11 @@ export const colors = {
   defaulText: '#7a7a7a',
 };
 
+export const fonts = {
+  fontTitle: 'Montserrat, sans-serif',
+  fontBody: 'Roboto, sans-serif',
+};
+
 export const GlobalCSS = createGlobalStyle`
   * {
     margin: 0;
@@ -19,5 +24,11 @@ export const GlobalCSS = createGlobalStyle`
     background-color: ${colors.white};
     color: ${colors.defaulText};
     font-family: 'Roboto', sans-serif;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
   }
 `;
