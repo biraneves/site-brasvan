@@ -9,18 +9,23 @@ export type Props = {
   type: 'light' | 'dark' | 'photo' | 'footer';
   photo?: string;
   children: JSX.Element;
+  id: string;
 };
 
-const Container = ({ type, photo, children }: Props) => {
+const Container = ({ type, photo, children, id }: Props) => {
   switch (type) {
     case 'dark':
-      return <DarkContainer>{children}</DarkContainer>;
+      return <DarkContainer id={id}>{children}</DarkContainer>;
     case 'photo':
-      return <PhotoContainer photo={photo}>{children}</PhotoContainer>;
+      return (
+        <PhotoContainer id={id} photo={photo}>
+          {children}
+        </PhotoContainer>
+      );
     case 'footer':
-      return <FooterContainer>{children}</FooterContainer>;
+      return <FooterContainer id={id}>{children}</FooterContainer>;
     default:
-      return <LightContainer>{children}</LightContainer>;
+      return <LightContainer id={id}>{children}</LightContainer>;
   }
 };
 

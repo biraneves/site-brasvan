@@ -29,12 +29,24 @@ const Header = ({ language, alterLanguage }: IProps) => {
               </LinkContainer>
             </li>
             <li>
-              <LinkContainer href="">
+              <LinkContainer
+                onClick={() => {
+                  const section = document.querySelector('#aboutUs');
+                  section?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                href=""
+              >
                 {translations[language].header.hdrAboutUs}
               </LinkContainer>
             </li>
             <li>
-              <LinkContainer href="">
+              <LinkContainer
+                onClick={() => {
+                  const section = document.querySelector('#services');
+                  section?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                href=""
+              >
                 {translations[language].header.hdrServices}
               </LinkContainer>
             </li>

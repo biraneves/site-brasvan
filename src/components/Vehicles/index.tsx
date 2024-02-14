@@ -5,7 +5,7 @@ import vehicles from '../../assets/images/veiculos-1.png';
 import { Content } from './styles';
 
 const Vehicles = ({ language }: IProps) => (
-  <Container type="light">
+  <Container id="vehicles" type="light">
     <Content className="container">
       <div>
         <h2>{translations[language].secVehicles.title}</h2>

@@ -5,7 +5,7 @@ import { translations } from '../../translations';
 import { ContactData, ContactForm, ContactSection } from './styles';
 
 const Contact = ({ language }: IProps) => (
-  <Container type="photo" photo={backgroundPhoto}>
+  <Container id="contact" type="photo" photo={backgroundPhoto}>
     <ContactSection className="container">
       <ContactData>
         <span className="fa-solid fa-phone"></span>

@@ -4,7 +4,7 @@ import Container from '../Container';
 import { Content, ContentBottom, ContentTop } from './styles';
 
 const Services = ({ language }: IProps) => (
-  <Container type="dark">
+  <Container id="services" type="dark">
     <Content className="container">
       <ContentTop>
         <h2>{translations[language].secServices.subEvents.title}</h2>

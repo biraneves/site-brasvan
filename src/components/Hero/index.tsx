@@ -6,7 +6,7 @@ import Container from '../Container';
 import backgroundHero from '../../assets/images/fundo-cabecalho-brasvan.png';
 
 const Hero = ({ language }: IProps) => (
-  <Container type="photo" photo={backgroundHero}>
+  <Container id="hero" type="photo" photo={backgroundHero}>
     <HeroContainer>
       <h1>{translations[language].hero.hroTitle}</h1>
       <div></div>

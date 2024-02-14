@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../../styles';
 import { Props } from '.';
 
-export const LightContainer = styled.div`
+export const LightContainer = styled.div<Omit<Props, 'type' | 'children'>>`
   background-color: ${colors.white};
   padding: 80px 0;
 
@@ -28,7 +28,7 @@ export const LightContainer = styled.div`
   }
 `;
 
-export const DarkContainer = styled.div`
+export const DarkContainer = styled.div<Omit<Props, 'type' | 'children'>>`
   background-image: linear-gradient(45deg, #14599a 0%, #061a40 100%);
   padding: 80px 0;
   color: ${colors.white};

@@ -8,7 +8,7 @@ const Footer = ({ language }: IProps) => {
 
   return (
     <footer>
-      <Container type="footer">
+      <Container id="footer" type="footer">
         <Content className="container">
           {translations[language].footer.text.map((text, index) => (
             <p key={text}>
