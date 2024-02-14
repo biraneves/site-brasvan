@@ -9,7 +9,19 @@
  * @return {string} The default browser language code (e.g., 'en-US', 'pt-BR').
  */
 export const detectUserLanguage: () => string = () => {
-  const userLanguage = navigator.language;
+  const userLanguage = navigator.language.slice(0, 2);
+  let language: string;
 
-  return userLanguage;
+  switch (userLanguage) {
+    case 'pt':
+      language = 'pt';
+      break;
+    case 'es':
+      language = 'es';
+      break;
+    default:
+      language = 'en';
+  }
+
+  return language;
 };

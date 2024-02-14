@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { detectUserLanguage } from '../../utils/language/language';
 
 const Home = () => {
-  detectUserLanguage();
+  console.log(detectUserLanguage());
   const [language, setLanguage] = useState();
   return <h1>Home</h1>;
 };
