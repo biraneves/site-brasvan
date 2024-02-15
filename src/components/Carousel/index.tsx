@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { Partner } from '../../utils/partners/partners';
 
-const Carousel = (partners: Partner[]) => {
+type Props = {
+  partners: Partner[];
+};
+
+const Carousel = ({ partners }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
