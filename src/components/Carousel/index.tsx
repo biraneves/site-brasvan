@@ -1,34 +1,54 @@
-import { useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Partner } from '../../utils/partners/partners';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { CarouselContainer, SlideEnvelope } from './styles';
 
 type Props = {
   partners: Partner[];
 };
 
 const Carousel = ({ partners }: Props) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToPrevious = () => {
-    const isFirstImage = currentIndex === 0;
-    const newIndex = isFirstImage ? partners.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToNext = () => {
-    const isLastImage = currentIndex === partners.length - 1;
-    const newIndex = isLastImage ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplaySpeed: 3000,
+    autoplay: true,
+    speed: 1000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
   };
 
   return (
-    <div>
-      <img
-        src={partners[currentIndex].logo}
-        alt={partners[currentIndex].name}
-      />
-      <button onClick={goToPrevious}>Anterior</button>
-      <button onClick={goToNext}>Próximo</button>
-    </div>
+    <CarouselContainer>
+      <Slider {...settings}>
+        {partners.map((partner) => (
+          <SlideEnvelope key={partner.name}>
+            <img src={partner.logo} alt={partner.name} />
+          </SlideEnvelope>
+        ))}
+      </Slider>
+    </CarouselContainer>
   );
 };
 

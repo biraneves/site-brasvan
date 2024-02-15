@@ -1,3 +1,5 @@
+const BASE_URL = `https://static-server-ten.vercel.app/partners/`;
+
 export type Partner = {
   name: string;
   logo: string;
@@ -5,115 +7,115 @@ export type Partner = {
 
 export const partners: Partner[] = [
   {
-    name: 'Abbott',
-    logo: '/assets/images/partners/abbott-logo.png',
+    name: `Abbott`,
+    logo: `${BASE_URL}abbott-logo.png`,
   },
   {
-    name: 'Atlas',
-    logo: '/assets/images/partners/atlas-logo.png',
+    name: `Atlas`,
+    logo: `${BASE_URL}atlas-logo.png`,
   },
   {
-    name: 'AT&T',
-    logo: '/assets/images/partners/att-logo.png',
+    name: `AT&T`,
+    logo: `${BASE_URL}att-logo.png`,
   },
   {
-    name: 'Cisco',
-    logo: '/assets/images/partners/cisco-logo.png',
+    name: `Cisco`,
+    logo: `${BASE_URL}cisco-logo.png`,
   },
   {
-    name: 'Coca-Cola',
-    logo: '/assets/images/partners/coca-cola-logo.png',
+    name: `Coca-Cola`,
+    logo: `${BASE_URL}coca-cola-logo.png`,
   },
   {
-    name: 'Distree Events',
-    logo: '/assets/images/partners/distree-logo.png',
+    name: `Distree Events`,
+    logo: `${BASE_URL}distree-logo.png`,
   },
   {
-    name: 'EMS',
-    logo: '/assets/images/partners/ems-logo.png',
+    name: `EMS`,
+    logo: `${BASE_URL}ems-logo.png`,
   },
   {
-    name: 'ESADE Business School',
-    logo: '/assets/images/partners/esade-logo.png',
+    name: `ESADE Business School`,
+    logo: `${BASE_URL}esade-logo.png`,
   },
   {
-    name: 'Eucatex',
-    logo: '/assets/images/partners/eucatex-logo.png',
+    name: `Eucatex`,
+    logo: `${BASE_URL}eucatex-logo.png`,
   },
   {
-    name: 'Evonik',
-    logo: '/assets/images/partners/evonik-logo.png',
+    name: `Evonik`,
+    logo: `${BASE_URL}evonik-logo.png`,
   },
   {
-    name: 'FedEx',
-    logo: '/assets/images/partners/fedex-logo.png',
+    name: `FedEx`,
+    logo: `${BASE_URL}fedex-logo.png`,
   },
   {
-    name: 'Germed',
-    logo: '/assets/images/partners/germed-logo.png',
+    name: `Germed`,
+    logo: `${BASE_URL}germed-logo.png`,
   },
   {
-    name: 'GSK',
-    logo: '/assets/images/partners/gsk-logo.png',
+    name: `GSK`,
+    logo: `${BASE_URL}gsk-logo.png`,
   },
   {
-    name: 'Johnson & Johnson',
-    logo: '/assets/images/partners/johnson-logo.png',
+    name: `Johnson & Johnson`,
+    logo: `${BASE_URL}johnson-logo.png`,
   },
   {
-    name: 'Mapfre',
-    logo: '/assets/images/partners/mapfre-logo.png',
+    name: `Mapfre`,
+    logo: `${BASE_URL}mapfre-logo.png`,
   },
   {
-    name: 'Match Connection',
-    logo: '/assets/images/partners/match-logo.png',
+    name: `Match Connection`,
+    logo: `${BASE_URL}match-logo.png`,
   },
   {
-    name: 'Merck',
-    logo: '/assets/images/partners/merck-logo.png',
+    name: `Merck`,
+    logo: `${BASE_URL}merck-logo.png`,
   },
   {
-    name: 'Novartis',
-    logo: '/assets/images/partners/novartis-logo.png',
+    name: `Novartis`,
+    logo: `${BASE_URL}novartis-logo.png`,
   },
   {
-    name: 'PCI',
-    logo: '/assets/images/partners/pci-logo.png',
+    name: `PCI`,
+    logo: `${BASE_URL}pci-logo.png`,
   },
   {
-    name: 'Pfizer',
-    logo: '/assets/images/partners/pfizer-logo.png',
+    name: `Pfizer`,
+    logo: `${BASE_URL}pfizer-logo.png`,
   },
   {
-    name: 'Poker Stars',
-    logo: 'poker-stars-logo.png',
+    name: `Poker Stars`,
+    logo: `${BASE_URL}poker-stars-logo.png`,
   },
   {
-    name: 'Rabobank',
-    logo: 'rabobank-logo.png',
+    name: `Rabobank`,
+    logo: `${BASE_URL}rabobank-logo.png`,
   },
   {
-    name: 'Roche',
-    logo: 'roche-logo.png',
+    name: `Roche`,
+    logo: `${BASE_URL}roche-logo.png`,
   },
   {
-    name: 'Samsung',
-    logo: 'samsung-logo.png',
+    name: `Samsung`,
+    logo: `${BASE_URL}samsung-logo.png`,
   },
   {
-    name: 'Santander',
-    logo: 'santander-logo.png',
+    name: `Santander`,
+    logo: `${BASE_URL}santander-logo.png`,
   },
   {
-    name: 'Scania',
-    logo: 'scania-logo.png',
+    name: `Scania`,
+    logo: `${BASE_URL}scania-logo.png`,
   },
   {
-    name: 'Telefonica',
-    logo: 'telefonica-logo.png',
+    name: `Telefonica`,
+    logo: `${BASE_URL}telefonica-logo.png`,
   },
   {
-    name: 'Viajes El Corte Inglés',
-    logo: 'viajes-el-corte-ingles-logo.png',
+    name: `Viajes El Corte Inglés`,
+    logo: `${BASE_URL}viajes-el-corte-ingles-logo.png`,
   },
 ];
