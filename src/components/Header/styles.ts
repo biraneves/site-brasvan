@@ -58,13 +58,19 @@ export const HeaderContainer = styled.header`
       align-items: center;
     }
 
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-    }
-
     nav {
       @media screen and (max-width: 767px) {
-        display: none;
+        li {
+          display: none;
+
+          &:nth-child(7) {
+            display: inline-block;
+          }
+
+          &:nth-child(8) {
+            display: inline-block;
+          }
+        }
       }
     }
   }
