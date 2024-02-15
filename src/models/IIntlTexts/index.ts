@@ -60,6 +60,7 @@ export interface ILanguageDetails {
     };
     subForm: {
       fields: {
+        field: string;
         label: string;
         placeholder: string;
       }[];

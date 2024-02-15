@@ -97,18 +97,22 @@ export const translations: ITranslations = {
       subForm: {
         fields: [
           {
+            field: 'name',
             label: 'Name',
             placeholder: 'Your full name',
           },
           {
+            field: 'email',
             label: 'E-mail',
             placeholder: 'Your best email',
           },
           {
+            field: 'phone',
             label: 'Phone',
             placeholder: 'Phone number, with country code and area code',
           },
           {
+            field: 'message',
             label: 'Message',
             placeholder: 'Your message',
           },
@@ -219,18 +223,22 @@ export const translations: ITranslations = {
       subForm: {
         fields: [
           {
+            field: 'name',
             label: 'Nombre',
             placeholder: 'Su nombre completo',
           },
           {
+            field: 'email',
             label: 'E-mail',
             placeholder: 'Su mejor correo electrónico',
           },
           {
+            field: 'phone',
             label: 'Teléfono',
             placeholder: 'Teléfono, con código de país y código de área',
           },
           {
+            field: 'message',
             label: 'Mensaje',
             placeholder: 'Su mensaje',
           },
@@ -341,18 +349,22 @@ export const translations: ITranslations = {
       subForm: {
         fields: [
           {
+            field: 'name',
             label: 'Nome',
             placeholder: 'Seu nome completo',
           },
           {
+            field: 'email',
             label: 'E-mail',
             placeholder: 'Seu melhor e-mail',
           },
           {
+            field: 'phone',
             label: 'Telefone',
             placeholder: 'Telefone, com código do país e DDD',
           },
           {
+            field: 'message',
             label: 'Mensagem',
             placeholder: 'Sua mensagem',
           },
